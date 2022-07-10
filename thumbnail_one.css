@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-body{
+    height: 100%;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.thumbnail-image{
+    width: 100%;
+    height: 100%;
+}
+
+.div-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: calc(100%/3);
+}
+
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color:skyblue;
+}
+
+.footer{
+    position:relative;
+    z-index: 3;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer-section{
+    color: black;
+    background-color: rgba(120, 144, 156, 0.507);
+    opacity: 0.4;
+    width: 100%;
+}
+
+.span-text{
+    color: black;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    width:fit-content;
+    background-color: rgb(255, 230, 0);
+}
+
+/* Note: i have written media queries just to maintain ratio between height and width hence are not device specific*/
+
+@media only screen and (max-width:1200px){
+    *{
+        font-size: 1.75rem;
+    }
+
+    .body{
+        height:80vh;
+    }
+}
+
+@media only screen and (max-width:930px){
+    *{
+        font-size: 1.5rem;
+    }
+
+    .body{
+        height:70vh;
+    }
+}
+
+@media only screen and (max-width:680px){
+    *{
+        font-size: 1.25rem;
+    }
+
+    .body{
+        height:60vh;
+    }
+}
+
+@media only screen and (max-width:424px){
+    *{
+        font-size: 1rem;
+    }
+    .body{
+        height:52vh;
+    }
+}
+
+@media only screen and (max-width:320px){
+    *{
+        font-size:0.75rem;
+    }
+    .body{
+        height:35vh;
+    }
+}
