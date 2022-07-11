@@ -16,16 +16,9 @@
     grid-template-columns: 55% 45%;
 }
 
-.thumbnail-image{
-    width: 100%;
-    height: 100%;
-}
-
 .div-container{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
 }
 
 .box{
